@@ -637,11 +637,12 @@ margin-bottom: 8px;
     overflow: hidden;
 }
 
-.gallery-list-overlay-wrapper:hover .overlay,
-.gallery-list-overlay-wrapper:focus .overlay {
+.gallery-list-overlay-wrapper:hover .overlay {
     transform: translateY(0%);
 }
-
+.gallery-list-overlay-wrapper:focus .overlay {
+        transform: translateY(0%);
+    }
 
 
 .gallery-content {
