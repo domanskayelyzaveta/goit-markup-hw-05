@@ -704,7 +704,7 @@ fill: var(--additional-background-color);
 
 .modal {
     position: fixed;
-    transition-property: visibility, opacity, transform;
+    transition-property: visibility, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
@@ -724,6 +724,9 @@ fill: var(--additional-background-color);
     border-radius: 4px;
     background: var(--dairy-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
