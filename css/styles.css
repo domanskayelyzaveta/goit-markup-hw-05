@@ -705,10 +705,10 @@ fill: var(--additional-background-color);
 .modal {
     position: fixed;
     transition-property: visibility, opacity, transform;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
-    height: 100vh;
+    min-height: 584px;
     left: 0;
     top: 0;
     background: rgba(46, 47, 66, 0.40);
@@ -727,6 +727,7 @@ fill: var(--additional-background-color);
 }
 
 .close-button {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -738,11 +739,21 @@ fill: var(--additional-background-color);
     position: absolute;
     top: 24px;
     right: 24px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
+.close-button:hover,
+.close-button:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
 .modal-btn-close {
-    width: 8px;
-    height: 8px;
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
