@@ -627,7 +627,7 @@ margin-bottom: 8px;
     color: var(--additional-background-color);
     background: var(--purple-color);
     transform: translateY(100%);
-    transition: transform;
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
