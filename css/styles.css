@@ -447,10 +447,6 @@ margin-bottom: 8px;
     background-color: var(--ocean-button-color);
 }
 
-.social-links-footer {
-    display: flex;
-    text-align: center;
-}
 
 .social-link-footer {
     display: flex;
@@ -656,7 +652,7 @@ flex-basis: calc((100% - 48px) / 3);
 }
 
 .social-links-footer {
-    display: flex;
+    display: block;
 }
 
 .social-icons {
