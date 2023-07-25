@@ -630,7 +630,6 @@ margin-bottom: 8px;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .gallery-list-overlay-wrapper {
@@ -638,9 +637,7 @@ margin-bottom: 8px;
     overflow: hidden;
 }
 
-.gallery-list-overlay-wrapper:hover .overlay {
-    transform: translateY(0%);
-}
+.gallery-list-overlay-wrapper:hover,
 .gallery-list-overlay-wrapper:focus .overlay {
     transform: translateY(0%);
 }
