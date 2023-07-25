@@ -120,10 +120,10 @@ align-items: center;
 .menu-item {
     color: var(--main-text-color);
     display: inline-block;
-    transition-property: color;
-    transition-duration: transform var(--duration);
-    transition-timing-function: var(--timing-function);
     padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item:hover,
@@ -133,6 +133,7 @@ align-items: center;
 
 .nav-active-link {
     position: relative;
+    color: var(--ocean-button-color);
 }
 
 .nav-active-link::after {
