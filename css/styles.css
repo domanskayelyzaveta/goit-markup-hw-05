@@ -61,7 +61,7 @@ button {
 
 .container {
     max-width: 1152px;
-    padding: 12px 12px;
+    /* padding: 12px 12px; */
     margin: 0 auto;
 }
 
@@ -77,7 +77,6 @@ align-items: center;
 }
 
 .page-navigation{
-    padding: 24px 0px;
     display: flex;
     align-items: center;
 }
@@ -124,8 +123,9 @@ align-items: center;
     transition-property: color;
     transition-duration: transform var(--duration);
     transition-timing-function: var(--timing-function);
-    
+    padding: 24px 0;
 }
+
 .menu-item:hover,
 .menu-item:focus {
     color: var(--ocean-button-color);
@@ -136,21 +136,21 @@ align-items: center;
 }
 
 .nav-active-link::after {
+    display: block;
+    content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
     /* top: calc(100% - 4px); */
-    display: block;
-    content: ;
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    color: var(--ocean-button-color);
+    background-color: var(--ocean-button-color);
 }
 
 .header-menu-link {
-margin-left: 40px;
-padding: 24px 0;
+    margin-left: 40px;
+    /* padding: 24px 0; */
 }
 
 .contact {
